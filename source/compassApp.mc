@@ -3,16 +3,12 @@ import Toybox.Lang;
 import Toybox.WatchUi;
 
 
-class MappDrawer {
-
-}
-
-
 
 class compassApp extends Application.AppBase {
 
     function initialize() {
         AppBase.initialize();
+
     }
 
     // onStart() is called on application start up
@@ -25,7 +21,7 @@ class compassApp extends Application.AppBase {
 
     // Return the initial view of your application here
     function getInitialView() as [Views] or [Views, InputDelegates] {
-        return [ new compassView(), new compassDelegate() ];
+        return [ new compassView() ];
     }
 
 }
