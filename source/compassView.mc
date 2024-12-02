@@ -14,12 +14,12 @@ class compassView extends  Ui.SimpleDataField {
         var heading = info.currentHeading;
         if (heading != null) {
             heading = 3.14; // we can custom set it to pi
-            
+
             var deg = radToDeg(heading);
             return deg;
         }
         return "";
-        
+
     }
 
    function radToDeg(rad) {
