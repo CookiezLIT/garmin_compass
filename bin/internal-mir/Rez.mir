@@ -1,0 +1,1535 @@
+[ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 1; ]
+import Toybox.Lang;
+[ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 2; ]
+using Toybox.WatchUi;
+[ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 3; ]
+using Toybox.WatchUi as :Ui;
+[ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 4; ]
+using Toybox.Graphics;
+[ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 5; ]
+using Toybox.Graphics as :Gfx;
+[ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 7; ]
+module Rez {
+    [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 7; ]
+    <init> {
+    }
+    [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 8; ]
+    module Drawables {
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 8; ]
+        <init> {
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 9; @position = 27; initialized = true; ]
+        var LauncherIcon as ResourceId;
+    }
+    [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 12; ]
+    module Layouts {
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 12; ]
+        <init> {
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 13; ]
+        function MainLayout(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
+_Users_dan_luciannita_work_garminapp_Solutions_compass_bin_gen_006_B3906_00_source_Rez_mcgen_13_74_21_8_start:
+[ "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen" 14 12 ]
+            [ "_Users_dan_luciannita_work_garminapp_Solutions_compass_bin_gen_006_B3906_00_source_Rez_mcgen_13_74_21_8_start" "_Users_dan_luciannita_work_garminapp_Solutions_compass_bin_gen_006_B3906_00_source_Rez_mcgen_13_74_21_8_stop" ]
+            %rez_cmp_local_text_type_title.1 = local;
+            %tmp.3 = getm $.Toybox.WatchUi;
+            %tmp.4 = getv function ? %tmp.3 :Text;
+            %tmp.5 = newd 6;
+            %tmp.7 = const :identifier;
+            %tmp.8 = "type_title";
+            %tmp.9 = dup %tmp.5;
+            %tmp.10 = aputv %tmp.9 %tmp.7 %tmp.8;
+            %tmp.12 = const :locX;
+            %tmp.13 = 260;
+            %tmp.14 = 0.5;
+            %tmp.15 = mul %tmp.13 %tmp.14;
+            %tmp.16 = dup %tmp.10;
+            %tmp.17 = aputv %tmp.16 %tmp.12 %tmp.15;
+            %tmp.19 = const :locY;
+            %tmp.20 = 260;
+            %tmp.21 = 20;
+            %tmp.22 = 100.0;
+            %tmp.23 = div %tmp.21 %tmp.22;
+            %tmp.24 = mul %tmp.20 %tmp.23;
+            %tmp.25 = dup %tmp.17;
+            %tmp.26 = aputv %tmp.25 %tmp.19 %tmp.24;
+            %tmp.28 = const :text;
+            %tmp.29 = "COLD";
+            %tmp.30 = dup %tmp.26;
+            %tmp.31 = aputv %tmp.30 %tmp.28 %tmp.29;
+            %tmp.33 = const :justification;
+            %tmp.34 = getm $.Toybox.Graphics;
+            %tmp.35 = getv %tmp.34 :TEXT_JUSTIFY_CENTER;
+            %tmp.36 = dup %tmp.31;
+            %tmp.37 = aputv %tmp.36 %tmp.33 %tmp.35;
+            %tmp.39 = const :font;
+            %tmp.40 = getm $.Toybox.Graphics;
+            %tmp.41 = getv %tmp.40 :FONT_MEDIUM;
+            %tmp.42 = dup %tmp.37;
+            %tmp.43 = aputv %tmp.42 %tmp.39 %tmp.41;
+            %tmp.1 = newc %tmp.4 (%tmp.43);
+            lputv %rez_cmp_local_text_type_title.1 %tmp.1;
+[ "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen" 16 12 ]
+            [ "_Users_dan_luciannita_work_garminapp_Solutions_compass_bin_gen_006_B3906_00_source_Rez_mcgen_13_74_21_8_start" "_Users_dan_luciannita_work_garminapp_Solutions_compass_bin_gen_006_B3906_00_source_Rez_mcgen_13_74_21_8_stop" ]
+            %rez_cmp_local_text_current_timer.2 = local;
+            %tmp.46 = getm $.Toybox.WatchUi;
+            %tmp.47 = getv function ? %tmp.46 :Text;
+            %tmp.48 = newd 6;
+            %tmp.50 = const :identifier;
+            %tmp.51 = "current_timer";
+            %tmp.52 = dup %tmp.48;
+            %tmp.53 = aputv %tmp.52 %tmp.50 %tmp.51;
+            %tmp.55 = const :locX;
+            %tmp.56 = 260;
+            %tmp.57 = 0.5;
+            %tmp.58 = mul %tmp.56 %tmp.57;
+            %tmp.59 = dup %tmp.53;
+            %tmp.60 = aputv %tmp.59 %tmp.55 %tmp.58;
+            %tmp.62 = const :locY;
+            %tmp.63 = 260;
+            %tmp.64 = lgetv %dc;
+            %tmp.65 = getv function %tmp.64 :getFontHeight;
+            %tmp.66 = getm $.Toybox.Graphics;
+            %tmp.67 = getv %tmp.66 :FONT_NUMBER_THAI_HOT;
+            %tmp.68 = invoke %tmp.64 %tmp.65(%tmp.67);
+            %tmp.69 = sub %tmp.63 %tmp.68;
+            %tmp.70 = 0.5;
+            %tmp.71 = mul %tmp.69 %tmp.70;
+            %tmp.72 = dup %tmp.60;
+            %tmp.73 = aputv %tmp.72 %tmp.62 %tmp.71;
+            %tmp.75 = const :text;
+            %tmp.76 = "0:30";
+            %tmp.77 = dup %tmp.73;
+            %tmp.78 = aputv %tmp.77 %tmp.75 %tmp.76;
+            %tmp.80 = const :justification;
+            %tmp.81 = getm $.Toybox.Graphics;
+            %tmp.82 = getv %tmp.81 :TEXT_JUSTIFY_CENTER;
+            %tmp.83 = dup %tmp.78;
+            %tmp.84 = aputv %tmp.83 %tmp.80 %tmp.82;
+            %tmp.86 = const :font;
+            %tmp.87 = getm $.Toybox.Graphics;
+            %tmp.88 = getv %tmp.87 :FONT_NUMBER_THAI_HOT;
+            %tmp.89 = dup %tmp.84;
+            %tmp.90 = aputv %tmp.89 %tmp.86 %tmp.88;
+            %tmp.44 = newc %tmp.47 (%tmp.90);
+            lputv %rez_cmp_local_text_current_timer.2 %tmp.44;
+[ "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen" 18 12 ]
+            [ "_Users_dan_luciannita_work_garminapp_Solutions_compass_bin_gen_006_B3906_00_source_Rez_mcgen_13_74_21_8_start" "_Users_dan_luciannita_work_garminapp_Solutions_compass_bin_gen_006_B3906_00_source_Rez_mcgen_13_74_21_8_stop" ]
+            %rez_cmp_local_text_cylcles_left.3 = local;
+            %tmp.93 = getm $.Toybox.WatchUi;
+            %tmp.94 = getv function ? %tmp.93 :Text;
+            %tmp.95 = newd 6;
+            %tmp.97 = const :identifier;
+            %tmp.98 = "cylcles_left";
+            %tmp.99 = dup %tmp.95;
+            %tmp.100 = aputv %tmp.99 %tmp.97 %tmp.98;
+            %tmp.102 = const :locX;
+            %tmp.103 = 260;
+            %tmp.104 = 0.5;
+            %tmp.105 = mul %tmp.103 %tmp.104;
+            %tmp.106 = dup %tmp.100;
+            %tmp.107 = aputv %tmp.106 %tmp.102 %tmp.105;
+            %tmp.109 = const :locY;
+            %tmp.110 = 260;
+            %tmp.111 = 70;
+            %tmp.112 = 100.0;
+            %tmp.113 = div %tmp.111 %tmp.112;
+            %tmp.114 = mul %tmp.110 %tmp.113;
+            %tmp.115 = dup %tmp.107;
+            %tmp.116 = aputv %tmp.115 %tmp.109 %tmp.114;
+            %tmp.118 = const :text;
+            %tmp.119 = "5 cycles left";
+            %tmp.120 = dup %tmp.116;
+            %tmp.121 = aputv %tmp.120 %tmp.118 %tmp.119;
+            %tmp.123 = const :justification;
+            %tmp.124 = getm $.Toybox.Graphics;
+            %tmp.125 = getv %tmp.124 :TEXT_JUSTIFY_CENTER;
+            %tmp.126 = dup %tmp.121;
+            %tmp.127 = aputv %tmp.126 %tmp.123 %tmp.125;
+            %tmp.129 = const :font;
+            %tmp.130 = getm $.Toybox.Graphics;
+            %tmp.131 = getv %tmp.130 :FONT_SMALL;
+            %tmp.132 = dup %tmp.127;
+            %tmp.133 = aputv %tmp.132 %tmp.129 %tmp.131;
+            %tmp.91 = newc %tmp.94 (%tmp.133);
+            lputv %rez_cmp_local_text_cylcles_left.3 %tmp.91;
+[ "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen" 20 12 ]
+            %tmp.134 = newa 3 Array<WatchUi.Drawable>;
+            %tmp.136 = lgetv %rez_cmp_local_text_type_title.1;
+            %tmp.137 = dup %tmp.134;
+            %tmp.138 = aputv %tmp.137 0 %tmp.136;
+            %tmp.140 = lgetv %rez_cmp_local_text_current_timer.2;
+            %tmp.141 = dup %tmp.138;
+            %tmp.142 = aputv %tmp.141 1 %tmp.140;
+            %tmp.144 = lgetv %rez_cmp_local_text_cylcles_left.3;
+            %tmp.145 = dup %tmp.142;
+            %tmp.146 = aputv %tmp.145 2 %tmp.144;
+            ret %tmp.146;
+_Users_dan_luciannita_work_garminapp_Solutions_compass_bin_gen_006_B3906_00_source_Rez_mcgen_13_74_21_8_stop:
+        }
+    }
+    [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 24; ]
+    module Strings {
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 24; ]
+        <init> {
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 25; @position = 27; initialized = true; ]
+        var menu_label_1 as ResourceId;
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 26; @position = 27; initialized = true; ]
+        var menu_label_2 as ResourceId;
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 27; @position = 27; initialized = true; ]
+        var prompt as ResourceId;
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 28; @position = 27; initialized = true; ]
+        var AppName as ResourceId;
+    }
+    [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 31; ]
+    module Styles {
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 31; ]
+        <init> {
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 32; ]
+        module prompt_font_enhanced_readability__body_with_title {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 32; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 33; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 36; ]
+        module system_size__menu_header {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 36; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 37; @position = 18; ]
+            const width as Number = 260;
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 38; @position = 18; ]
+            const height as Number = 81;
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 41; ]
+        module system_loc__hint_button_left_bottom {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 41; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 42; @position = 18; ]
+            const x as Number = 10;
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 43; @position = 18; ]
+            const y as Number = 172;
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 46; ]
+        module prompt_font_enhanced_readability__body_no_title {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 46; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 47; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 50; ]
+        module prompt_loc__body_no_title {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 50; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 51; @position = 18; ]
+            const x as Number = 26;
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 52; @position = 18; ]
+            const y as Number = 26;
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 55; ]
+        module system_icon_dark__about {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 55; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 56; @position = 18; ]
+            const filename as String = "/Users/dan-luciannita/Library/Application Support/Garmin/ConnectIQ/Devices/fenix7/system_icon_dark__about.svg";
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 57; @position = 18; ]
+            const compress as String = "true";
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 58; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 59; @position = 18; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 62; ]
+        module system_icon_light__question {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 62; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 63; @position = 18; ]
+            const filename as String = "/Users/dan-luciannita/Library/Application Support/Garmin/ConnectIQ/Devices/fenix7/system_icon_light__question.svg";
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 64; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 67; ]
+        module system_loc__hint_button_left_top {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 67; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 68; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 71; ]
+        module prompt_font__title {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 71; ]
+            <init> {
+[ "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen" 72 18 ]
+                %tmp.147 = getm $.Toybox.Graphics;
+                %tmp.148 = getv %tmp.147 :TEXT_JUSTIFY_CENTER;
+                %tmp.149 = getm $.Toybox.Graphics;
+                %tmp.150 = getv %tmp.149 :TEXT_JUSTIFY_VCENTER;
+                %tmp.151 = bitor %tmp.148 %tmp.150;
+                putv self :justification %tmp.151;
+[ "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen" 73 18 ]
+                %tmp.152 = getm $.Toybox.Graphics;
+                %tmp.153 = getv %tmp.152 :FONT_XTINY;
+                putv self :font %tmp.153;
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 72; @position = 18; ]
+            const justification;
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 73; @position = 18; ]
+            const font;
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 76; ]
+        module system_icon_dark__discard {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 76; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 77; @position = 18; ]
+            const filename as String = "/Users/dan-luciannita/Library/Application Support/Garmin/ConnectIQ/Devices/fenix7/system_icon_dark__discard.svg";
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 78; @position = 18; ]
+            const compress as String = "true";
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 79; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 80; @position = 18; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 83; ]
+        module system_size__menu_item {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 83; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 84; @position = 18; ]
+            const width as Number = 260;
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 85; @position = 18; ]
+            const height as Number = 68;
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 88; ]
+        module system_color_dark__text {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 88; ]
+            <init> {
+[ "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen" 90 18 ]
+                %tmp.154 = getm $.Toybox.Graphics;
+                %tmp.155 = getv %tmp.154 :COLOR_TRANSPARENT;
+                putv self :background %tmp.155;
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 89; @position = 18; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 90; @position = 18; ]
+            const background;
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 93; ]
+        module system_icon_destructive__discard {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 93; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 94; @position = 18; ]
+            const filename as String = "/Users/dan-luciannita/Library/Application Support/Garmin/ConnectIQ/Devices/fenix7/system_icon_destructive__discard.svg";
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 95; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 98; ]
+        module system_icon_dark__hint_action_menu {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 98; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 99; @position = 18; ]
+            const filename as String = "/Users/dan-luciannita/Library/Application Support/Garmin/ConnectIQ/Devices/fenix7/system_icon_dark__hint_button_right_top.svg";
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 100; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 103; ]
+        module prompt_size__title {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 103; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 104; @position = 18; ]
+            const width as Number = 208;
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 105; @position = 18; ]
+            const height as Number = 39;
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 108; ]
+        module confirmation_font__body {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 108; ]
+            <init> {
+[ "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen" 109 18 ]
+                %tmp.156 = getm $.Toybox.Graphics;
+                %tmp.157 = getv %tmp.156 :TEXT_JUSTIFY_CENTER;
+                %tmp.158 = getm $.Toybox.Graphics;
+                %tmp.159 = getv %tmp.158 :TEXT_JUSTIFY_VCENTER;
+                %tmp.160 = bitor %tmp.157 %tmp.159;
+                putv self :justification %tmp.160;
+[ "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen" 110 18 ]
+                %tmp.161 = getm $.Toybox.Graphics;
+                %tmp.162 = getv %tmp.161 :FONT_TINY;
+                putv self :font %tmp.162;
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 109; @position = 18; ]
+            const justification;
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 110; @position = 18; ]
+            const font;
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 113; ]
+        module system_color_dark__background {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 113; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 114; @position = 18; ]
+            const color as Number = 0x000000;
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 115; @position = 18; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 118; ]
+        module system_icon_destructive__hint_button_left_top {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 118; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 119; @position = 18; ]
+            const filename as String = "/Users/dan-luciannita/Library/Application Support/Garmin/ConnectIQ/Devices/fenix7/system_icon_destructive__hint_button_left_top.svg";
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 120; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 123; ]
+        module system_size__launch_icon {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 123; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 124; @position = 18; ]
+            const scaleX as Number = 40;
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 125; @position = 18; ]
+            const scaleY as Number = 40;
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 126; @position = 18; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 129; ]
+        module confirmation_input__confirm {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 129; ]
+            <init> {
+[ "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen" 130 18 ]
+                %tmp.163 = getm $.Toybox.WatchUi;
+                %tmp.164 = getv %tmp.163 :KEY_ENTER;
+                putv self :button %tmp.164;
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 130; @position = 18; ]
+            const button;
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 133; ]
+        module prompt_font__body_with_title {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 133; ]
+            <init> {
+[ "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen" 134 18 ]
+                %tmp.165 = getm $.Toybox.Graphics;
+                %tmp.166 = getv %tmp.165 :TEXT_JUSTIFY_CENTER;
+                putv self :justification %tmp.166;
+[ "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen" 135 18 ]
+                %tmp.167 = getm $.Toybox.Graphics;
+                %tmp.168 = getv %tmp.167 :FONT_TINY;
+                putv self :font %tmp.168;
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 134; @position = 18; ]
+            const justification;
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 135; @position = 18; ]
+            const font;
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 138; ]
+        module confirmation_loc__body {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 138; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 139; @position = 18; ]
+            const x as Number = 52;
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 140; @position = 18; ]
+            const y as Number = 52;
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 143; ]
+        module system_icon_destructive__hint_button_left_bottom {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 143; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 144; @position = 18; ]
+            const filename as String = "/Users/dan-luciannita/Library/Application Support/Garmin/ConnectIQ/Devices/fenix7/system_icon_destructive__hint_button_left_bottom.svg";
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 145; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 148; ]
+        module prompt_color_dark__background {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 148; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 149; @position = 18; ]
+            const color as Number = 0x000000;
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 150; @position = 18; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 153; ]
+        module system_icon_destructive__hint_action_menu {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 153; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 154; @position = 18; ]
+            const filename as String = "/Users/dan-luciannita/Library/Application Support/Garmin/ConnectIQ/Devices/fenix7/system_icon_destructive__hint_button_right_top.svg";
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 155; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 158; ]
+        module system_loc__hint_action_menu {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 158; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 159; @position = 18; ]
+            const x as Number = 225;
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 160; @position = 18; ]
+            const y as Number = 48;
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 163; ]
+        module confirmation_icon__hint_confirm {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 163; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 164; @position = 18; ]
+            const filename as String = "/Users/dan-luciannita/Library/Application Support/Garmin/ConnectIQ/Devices/fenix7/confirmation_icon__hint_completion.svg";
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 165; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 168; ]
+        module system_loc__hint_button_left_middle {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 168; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 169; @position = 18; ]
+            const x as Number = 3;
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 170; @position = 18; ]
+            const y as Number = 108;
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 173; ]
+        module prompt_size__body_no_title {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 173; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 174; @position = 18; ]
+            const width as Number = 208;
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 175; @position = 18; ]
+            const height as Number = 208;
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 178; ]
+        module system_icon_light__hint_button_left_top {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 178; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 179; @position = 18; ]
+            const filename as String = "/Users/dan-luciannita/Library/Application Support/Garmin/ConnectIQ/Devices/fenix7/system_icon_light__hint_button_left_top.svg";
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 180; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 183; ]
+        module prompt_color_light__background {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 183; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 184; @position = 18; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 185; @position = 18; ]
+            const background as Number = 0xFFFFFF;
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 188; ]
+        module confirmation_input__delete {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 188; ]
+            <init> {
+[ "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen" 189 18 ]
+                %tmp.169 = getm $.Toybox.WatchUi;
+                %tmp.170 = getv %tmp.169 :KEY_ENTER;
+                putv self :button %tmp.170;
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 189; @position = 18; ]
+            const button;
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 192; ]
+        module system_icon_dark__hint_button_left_top {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 192; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 193; @position = 18; ]
+            const filename as String = "/Users/dan-luciannita/Library/Application Support/Garmin/ConnectIQ/Devices/fenix7/system_icon_dark__hint_button_left_top.svg";
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 194; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 197; ]
+        module system_input__action_menu {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 197; ]
+            <init> {
+[ "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen" 198 18 ]
+                %tmp.171 = getm $.Toybox.WatchUi;
+                %tmp.172 = getv %tmp.171 :KEY_ENTER;
+                putv self :button %tmp.172;
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 198; @position = 18; ]
+            const button;
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 201; ]
+        module system_icon_light__save {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 201; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 202; @position = 18; ]
+            const filename as String = "/Users/dan-luciannita/Library/Application Support/Garmin/ConnectIQ/Devices/fenix7/system_icon_light__save.svg";
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 203; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 206; ]
+        module prompt_color_light__body {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 206; ]
+            <init> {
+[ "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen" 208 18 ]
+                %tmp.173 = getm $.Toybox.Graphics;
+                %tmp.174 = getv %tmp.173 :COLOR_TRANSPARENT;
+                putv self :background %tmp.174;
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 207; @position = 18; ]
+            const color as Number = 0x000000;
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 208; @position = 18; ]
+            const background;
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 211; ]
+        module system_loc__subwindow {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 211; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 212; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 215; ]
+        module system_icon_light__warning {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 215; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 216; @position = 18; ]
+            const filename as String = "/Users/dan-luciannita/Library/Application Support/Garmin/ConnectIQ/Devices/fenix7/system_icon_light__warning.svg";
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 217; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 220; ]
+        module confirmation_color_light__body {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 220; ]
+            <init> {
+[ "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen" 222 18 ]
+                %tmp.175 = getm $.Toybox.Graphics;
+                %tmp.176 = getv %tmp.175 :COLOR_TRANSPARENT;
+                putv self :background %tmp.176;
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 221; @position = 18; ]
+            const color as Number = 0x000000;
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 222; @position = 18; ]
+            const background;
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 225; ]
+        module confirmation_icon_light__hint_keep {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 225; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 226; @position = 18; ]
+            const filename as String = "/Users/dan-luciannita/Library/Application Support/Garmin/ConnectIQ/Devices/fenix7/confirmation_icon__hint_keep.svg";
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 227; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 230; ]
+        module activity_color_light__background {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 230; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 231; @position = 18; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 232; @position = 18; ]
+            const background as Number = 0xFFFFFF;
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 235; ]
+        module system_icon_positive__hint_button_right_top {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 235; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 236; @position = 18; ]
+            const filename as String = "/Users/dan-luciannita/Library/Application Support/Garmin/ConnectIQ/Devices/fenix7/system_icon_positive__hint_button_right_top.svg";
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 237; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 240; ]
+        module system_size__screen {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 240; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 241; @position = 18; ]
+            const width as Number = 260;
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 242; @position = 18; ]
+            const height as Number = 260;
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 245; ]
+        module system_icon_destructive__hint_button_right_bottom {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 245; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 246; @position = 18; ]
+            const filename as String = "/Users/dan-luciannita/Library/Application Support/Garmin/ConnectIQ/Devices/fenix7/system_icon_destructive__hint_button_right_bottom.svg";
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 247; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 250; ]
+        module system_color_light__background {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 250; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 251; @position = 18; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 252; @position = 18; ]
+            const background as Number = 0xFFFFFF;
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 255; ]
+        module system_icon_destructive__hint_button_right_top {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 255; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 256; @position = 18; ]
+            const filename as String = "/Users/dan-luciannita/Library/Application Support/Garmin/ConnectIQ/Devices/fenix7/system_icon_destructive__hint_button_right_top.svg";
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 257; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 260; ]
+        module confirmation_loc__hint_confirm {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 260; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 261; @position = 18; ]
+            const x as Number = 210;
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 262; @position = 18; ]
+            const y as Number = 48;
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 265; ]
+        module activity_color_dark__text {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 265; ]
+            <init> {
+[ "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen" 267 18 ]
+                %tmp.177 = getm $.Toybox.Graphics;
+                %tmp.178 = getv %tmp.177 :COLOR_TRANSPARENT;
+                putv self :background %tmp.178;
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 266; @position = 18; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 267; @position = 18; ]
+            const background;
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 270; ]
+        module confirmation_input__keep {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 270; ]
+            <init> {
+[ "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen" 271 18 ]
+                %tmp.179 = getm $.Toybox.WatchUi;
+                %tmp.180 = getv %tmp.179 :KEY_DOWN;
+                putv self :button %tmp.180;
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 271; @position = 18; ]
+            const button;
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 274; ]
+        module prompt_loc__body_with_title {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 274; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 275; @position = 18; ]
+            const x as Number = 26;
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 276; @position = 18; ]
+            const y as Number = 78;
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 279; ]
+        module system_icon_dark__search {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 279; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 280; @position = 18; ]
+            const filename as String = "/Users/dan-luciannita/Library/Application Support/Garmin/ConnectIQ/Devices/fenix7/system_icon_dark__search.svg";
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 281; @position = 18; ]
+            const compress as String = "true";
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 282; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 283; @position = 18; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 286; ]
+        module activity_color_light__text {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 286; ]
+            <init> {
+[ "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen" 288 18 ]
+                %tmp.181 = getm $.Toybox.Graphics;
+                %tmp.182 = getv %tmp.181 :COLOR_TRANSPARENT;
+                putv self :background %tmp.182;
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 287; @position = 18; ]
+            const color as Number = 0x000000;
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 288; @position = 18; ]
+            const background;
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 291; ]
+        module confirmation_icon__hint_keep {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 291; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 292; @position = 18; ]
+            const filename as String = "/Users/dan-luciannita/Library/Application Support/Garmin/ConnectIQ/Devices/fenix7/confirmation_icon__hint_keep.svg";
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 293; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 296; ]
+        module system_icon_dark__save {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 296; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 297; @position = 18; ]
+            const filename as String = "/Users/dan-luciannita/Library/Application Support/Garmin/ConnectIQ/Devices/fenix7/system_icon_dark__save.svg";
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 298; @position = 18; ]
+            const compress as String = "true";
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 299; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 300; @position = 18; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 303; ]
+        module system_icon_destructive__hint_button_left_middle {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 303; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 304; @position = 18; ]
+            const filename as String = "/Users/dan-luciannita/Library/Application Support/Garmin/ConnectIQ/Devices/fenix7/system_icon_destructive__hint_button_left_middle.svg";
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 305; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 308; ]
+        module system_icon_light__search {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 308; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 309; @position = 18; ]
+            const filename as String = "/Users/dan-luciannita/Library/Application Support/Garmin/ConnectIQ/Devices/fenix7/system_icon_light__search.svg";
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 310; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 313; ]
+        module system_icon_dark__hint_button_left_bottom {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 313; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 314; @position = 18; ]
+            const filename as String = "/Users/dan-luciannita/Library/Application Support/Garmin/ConnectIQ/Devices/fenix7/system_icon_dark__hint_button_left_bottom.svg";
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 315; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 318; ]
+        module system_icon_positive__hint_button_left_top {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 318; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 319; @position = 18; ]
+            const filename as String = "/Users/dan-luciannita/Library/Application Support/Garmin/ConnectIQ/Devices/fenix7/system_icon_positive__hint_button_left_top.svg";
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 320; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 323; ]
+        module system_loc__hint_button_right_bottom {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 323; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 324; @position = 18; ]
+            const x as Number = 225;
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 325; @position = 18; ]
+            const y as Number = 172;
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 328; ]
+        module confirmation_icon_dark__hint_reject {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 328; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 329; @position = 18; ]
+            const filename as String = "/Users/dan-luciannita/Library/Application Support/Garmin/ConnectIQ/Devices/fenix7/confirmation_icon__hint_reject.svg";
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 330; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 333; ]
+        module confirmation_color_dark__body {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 333; ]
+            <init> {
+[ "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen" 335 18 ]
+                %tmp.183 = getm $.Toybox.Graphics;
+                %tmp.184 = getv %tmp.183 :COLOR_TRANSPARENT;
+                putv self :background %tmp.184;
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 334; @position = 18; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 335; @position = 18; ]
+            const background;
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 338; ]
+        module confirmation_icon_light__hint_confirm {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 338; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 339; @position = 18; ]
+            const filename as String = "/Users/dan-luciannita/Library/Application Support/Garmin/ConnectIQ/Devices/fenix7/confirmation_icon__hint_completion.svg";
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 340; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 343; ]
+        module prompt_color_dark__title {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 343; ]
+            <init> {
+[ "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen" 345 18 ]
+                %tmp.185 = getm $.Toybox.Graphics;
+                %tmp.186 = getv %tmp.185 :COLOR_TRANSPARENT;
+                putv self :background %tmp.186;
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 344; @position = 18; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 345; @position = 18; ]
+            const background;
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 348; ]
+        module system_icon_destructive__cancel {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 348; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 349; @position = 18; ]
+            const filename as String = "/Users/dan-luciannita/Library/Application Support/Garmin/ConnectIQ/Devices/fenix7/system_icon_destructive__cancel.svg";
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 350; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 353; ]
+        module system_icon_light__hint_button_right_bottom {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 353; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 354; @position = 18; ]
+            const filename as String = "/Users/dan-luciannita/Library/Application Support/Garmin/ConnectIQ/Devices/fenix7/system_icon_light__hint_button_right_bottom.svg";
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 355; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 358; ]
+        module prompt_loc__title {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 358; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 359; @position = 18; ]
+            const x as Number = 26;
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 360; @position = 18; ]
+            const y as Number = 19;
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 363; ]
+        module confirmation_font_enhanced_readability__body {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 363; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 364; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 367; ]
+        module prompt_color_light__title {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 367; ]
+            <init> {
+[ "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen" 369 18 ]
+                %tmp.187 = getm $.Toybox.Graphics;
+                %tmp.188 = getv %tmp.187 :COLOR_TRANSPARENT;
+                putv self :background %tmp.188;
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 368; @position = 18; ]
+            const color as Number = 0x000000;
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 369; @position = 18; ]
+            const background;
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 372; ]
+        module system_icon_dark__hint_button_right_top {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 372; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 373; @position = 18; ]
+            const filename as String = "/Users/dan-luciannita/Library/Application Support/Garmin/ConnectIQ/Devices/fenix7/system_icon_dark__hint_button_right_top.svg";
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 374; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 377; ]
+        module system_icon_dark__hint_button_left_middle {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 377; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 378; @position = 18; ]
+            const filename as String = "/Users/dan-luciannita/Library/Application Support/Garmin/ConnectIQ/Devices/fenix7/system_icon_dark__hint_button_left_middle.svg";
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 379; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 382; ]
+        module confirmation_icon_dark__hint_keep {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 382; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 383; @position = 18; ]
+            const filename as String = "/Users/dan-luciannita/Library/Application Support/Garmin/ConnectIQ/Devices/fenix7/confirmation_icon__hint_keep.svg";
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 384; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 387; ]
+        module system_icon_light__cancel {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 387; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 388; @position = 18; ]
+            const filename as String = "/Users/dan-luciannita/Library/Application Support/Garmin/ConnectIQ/Devices/fenix7/system_icon_light__cancel.svg";
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 389; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 392; ]
+        module confirmation_icon_light__hint_reject {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 392; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 393; @position = 18; ]
+            const filename as String = "/Users/dan-luciannita/Library/Application Support/Garmin/ConnectIQ/Devices/fenix7/confirmation_icon__hint_reject.svg";
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 394; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 397; ]
+        module system_icon_light__about {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 397; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 398; @position = 18; ]
+            const filename as String = "/Users/dan-luciannita/Library/Application Support/Garmin/ConnectIQ/Devices/fenix7/system_icon_light__about.svg";
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 399; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 402; ]
+        module system_size__toast_icon {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 402; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 403; @position = 18; ]
+            const scaleX as Number = 40;
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 404; @position = 18; ]
+            const scaleY as Number = 40;
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 405; @position = 18; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 408; ]
+        module system_icon_dark__hint_button_right_middle {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 408; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 409; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 412; ]
+        module confirmation_icon__hint_reject {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 412; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 413; @position = 18; ]
+            const filename as String = "/Users/dan-luciannita/Library/Application Support/Garmin/ConnectIQ/Devices/fenix7/confirmation_icon__hint_reject.svg";
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 414; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 417; ]
+        module system_icon_light__hint_action_menu {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 417; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 418; @position = 18; ]
+            const filename as String = "/Users/dan-luciannita/Library/Application Support/Garmin/ConnectIQ/Devices/fenix7/system_icon_light__hint_button_right_top.svg";
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 419; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 422; ]
+        module system_icon_light__hint_button_right_middle {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 422; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 423; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 426; ]
+        module system_icon_destructive__hint_button_right_middle {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 426; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 427; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 430; ]
+        module confirmation_loc__hint_reject {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 430; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 431; @position = 18; ]
+            const x as Number = 10;
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 432; @position = 18; ]
+            const y as Number = 172;
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 433; @position = 18; ]
+            const horizontalJustification as String = "left";
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 436; ]
+        module confirmation_icon_dark__hint_delete {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 436; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 437; @position = 18; ]
+            const filename as String = "/Users/dan-luciannita/Library/Application Support/Garmin/ConnectIQ/Devices/fenix7/confirmation_icon__hint_delete.svg";
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 438; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 441; ]
+        module activity_color_dark__background {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 441; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 442; @position = 18; ]
+            const color as Number = 0x000000;
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 443; @position = 18; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 446; ]
+        module system_icon_light__hint_button_left_bottom {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 446; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 447; @position = 18; ]
+            const filename as String = "/Users/dan-luciannita/Library/Application Support/Garmin/ConnectIQ/Devices/fenix7/system_icon_light__hint_button_left_bottom.svg";
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 448; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 451; ]
+        module system_icon_positive__hint_button_left_middle {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 451; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 452; @position = 18; ]
+            const filename as String = "/Users/dan-luciannita/Library/Application Support/Garmin/ConnectIQ/Devices/fenix7/system_icon_positive__hint_button_left_middle.svg";
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 453; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 456; ]
+        module system_size__menu_icon {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 456; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 457; @position = 18; ]
+            const scaleX as Number = 40;
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 458; @position = 18; ]
+            const scaleY as Number = 40;
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 459; @position = 18; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 462; ]
+        module system_icon_destructive__warning {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 462; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 463; @position = 18; ]
+            const filename as String = "/Users/dan-luciannita/Library/Application Support/Garmin/ConnectIQ/Devices/fenix7/system_icon_destructive__warning.svg";
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 464; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 467; ]
+        module system_loc__hint_button_right_middle {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 467; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 468; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 471; ]
+        module system_icon_dark__cancel {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 471; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 472; @position = 18; ]
+            const filename as String = "/Users/dan-luciannita/Library/Application Support/Garmin/ConnectIQ/Devices/fenix7/system_icon_dark__cancel.svg";
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 473; @position = 18; ]
+            const compress as String = "true";
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 474; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 475; @position = 18; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 478; ]
+        module prompt_size__body_with_title {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 478; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 479; @position = 18; ]
+            const width as Number = 208;
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 480; @position = 18; ]
+            const height as Number = 156;
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 483; ]
+        module system_loc__hint_button_right_top {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 483; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 484; @position = 18; ]
+            const x as Number = 225;
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 485; @position = 18; ]
+            const y as Number = 48;
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 488; ]
+        module system_color_light__text {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 488; ]
+            <init> {
+[ "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen" 490 18 ]
+                %tmp.189 = getm $.Toybox.Graphics;
+                %tmp.190 = getv %tmp.189 :COLOR_TRANSPARENT;
+                putv self :background %tmp.190;
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 489; @position = 18; ]
+            const color as Number = 0x000000;
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 490; @position = 18; ]
+            const background;
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 493; ]
+        module system_icon_light__check {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 493; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 494; @position = 18; ]
+            const filename as String = "/Users/dan-luciannita/Library/Application Support/Garmin/ConnectIQ/Devices/fenix7/system_icon_light__check.svg";
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 495; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 498; ]
+        module confirmation_input__reject {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 498; ]
+            <init> {
+[ "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen" 499 18 ]
+                %tmp.191 = getm $.Toybox.WatchUi;
+                %tmp.192 = getv %tmp.191 :KEY_DOWN;
+                putv self :button %tmp.192;
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 499; @position = 18; ]
+            const button;
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 502; ]
+        module system_icon_light__revert {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 502; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 503; @position = 18; ]
+            const filename as String = "/Users/dan-luciannita/Library/Application Support/Garmin/ConnectIQ/Devices/fenix7/system_icon_light__revert.svg";
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 504; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 507; ]
+        module system_size__subwindow {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 507; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 508; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 511; ]
+        module system_icon_positive__hint_button_left_bottom {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 511; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 512; @position = 18; ]
+            const filename as String = "/Users/dan-luciannita/Library/Application Support/Garmin/ConnectIQ/Devices/fenix7/system_icon_positive__hint_button_left_bottom.svg";
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 513; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 516; ]
+        module system_icon_dark__check {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 516; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 517; @position = 18; ]
+            const filename as String = "/Users/dan-luciannita/Library/Application Support/Garmin/ConnectIQ/Devices/fenix7/system_icon_dark__check.svg";
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 518; @position = 18; ]
+            const compress as String = "true";
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 519; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 520; @position = 18; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 523; ]
+        module confirmation_loc__hint_keep {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 523; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 524; @position = 18; ]
+            const x as Number = 10;
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 525; @position = 18; ]
+            const y as Number = 172;
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 526; @position = 18; ]
+            const horizontalJustification as String = "left";
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 529; ]
+        module confirmation_loc__hint_delete {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 529; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 530; @position = 18; ]
+            const x as Number = 210;
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 531; @position = 18; ]
+            const y as Number = 48;
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 534; ]
+        module system_icon_positive__hint_action_menu {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 534; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 535; @position = 18; ]
+            const filename as String = "/Users/dan-luciannita/Library/Application Support/Garmin/ConnectIQ/Devices/fenix7/system_icon_positive__hint_button_right_top.svg";
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 536; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 539; ]
+        module system_icon_positive__hint_button_right_middle {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 539; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 540; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 543; ]
+        module system_icon_light__hint_button_left_middle {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 543; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 544; @position = 18; ]
+            const filename as String = "/Users/dan-luciannita/Library/Application Support/Garmin/ConnectIQ/Devices/fenix7/system_icon_light__hint_button_left_middle.svg";
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 545; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 548; ]
+        module system_icon_dark__hint_button_right_bottom {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 548; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 549; @position = 18; ]
+            const filename as String = "/Users/dan-luciannita/Library/Application Support/Garmin/ConnectIQ/Devices/fenix7/system_icon_dark__hint_button_right_bottom.svg";
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 550; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 553; ]
+        module system_icon_positive__hint_button_right_bottom {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 553; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 554; @position = 18; ]
+            const filename as String = "/Users/dan-luciannita/Library/Application Support/Garmin/ConnectIQ/Devices/fenix7/system_icon_positive__hint_button_right_bottom.svg";
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 555; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 558; ]
+        module system_icon_dark__revert {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 558; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 559; @position = 18; ]
+            const filename as String = "/Users/dan-luciannita/Library/Application Support/Garmin/ConnectIQ/Devices/fenix7/system_icon_dark__revert.svg";
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 560; @position = 18; ]
+            const compress as String = "true";
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 561; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 562; @position = 18; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 565; ]
+        module confirmation_icon_light__hint_delete {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 565; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 566; @position = 18; ]
+            const filename as String = "/Users/dan-luciannita/Library/Application Support/Garmin/ConnectIQ/Devices/fenix7/confirmation_icon__hint_delete.svg";
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 567; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 570; ]
+        module system_icon_dark__question {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 570; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 571; @position = 18; ]
+            const filename as String = "/Users/dan-luciannita/Library/Application Support/Garmin/ConnectIQ/Devices/fenix7/system_icon_dark__question.svg";
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 572; @position = 18; ]
+            const compress as String = "true";
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 573; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 574; @position = 18; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 577; ]
+        module system_icon_light__discard {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 577; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 578; @position = 18; ]
+            const filename as String = "/Users/dan-luciannita/Library/Application Support/Garmin/ConnectIQ/Devices/fenix7/system_icon_light__discard.svg";
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 579; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 582; ]
+        module device_info {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 582; ]
+            <init> {
+[ "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen" 584 18 ]
+                %tmp.193 = getm $.Toybox.System;
+                %tmp.194 = getv %tmp.193 :SCREEN_SHAPE_ROUND;
+                putv self :screenShape %tmp.194;
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 583; @position = 18; ]
+            const screenWidth as Number = 260;
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 584; @position = 18; ]
+            const screenShape;
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 585; @position = 18; ]
+            const hasNightMode as Boolean = false;
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 586; @position = 18; ]
+            const hasGpu as Boolean = true;
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 587; @position = 18; ]
+            const screenHeight as Number = 260;
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 588; @position = 18; ]
+            const hasTouchScreen as Boolean = true;
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 589; @position = 18; ]
+            const hasEnhancedReadabilityMode as Boolean = false;
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 592; ]
+        module confirmation_icon_dark__hint_confirm {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 592; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 593; @position = 18; ]
+            const filename as String = "/Users/dan-luciannita/Library/Application Support/Garmin/ConnectIQ/Devices/fenix7/confirmation_icon__hint_completion.svg";
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 594; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 597; ]
+        module prompt_font__body_no_title {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 597; ]
+            <init> {
+[ "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen" 598 18 ]
+                %tmp.195 = getm $.Toybox.Graphics;
+                %tmp.196 = getv %tmp.195 :TEXT_JUSTIFY_CENTER;
+                %tmp.197 = getm $.Toybox.Graphics;
+                %tmp.198 = getv %tmp.197 :TEXT_JUSTIFY_VCENTER;
+                %tmp.199 = bitor %tmp.196 %tmp.198;
+                putv self :justification %tmp.199;
+[ "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen" 599 18 ]
+                %tmp.200 = getm $.Toybox.Graphics;
+                %tmp.201 = getv %tmp.200 :FONT_TINY;
+                putv self :font %tmp.201;
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 598; @position = 18; ]
+            const justification;
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 599; @position = 18; ]
+            const font;
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 602; ]
+        module prompt_size__title_icon {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 602; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 603; @position = 18; ]
+            const scaleX as Float = 0.15;
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 604; @position = 18; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 607; ]
+        module system_icon_dark__warning {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 607; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 608; @position = 18; ]
+            const filename as String = "/Users/dan-luciannita/Library/Application Support/Garmin/ConnectIQ/Devices/fenix7/system_icon_dark__warning.svg";
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 609; @position = 18; ]
+            const compress as String = "true";
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 610; @position = 18; ]
+            const dithering as String = "none";
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 611; @position = 18; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 614; ]
+        module prompt_loc__title_icon {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 614; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 615; @position = 18; ]
+            const x as Number = 130;
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 616; @position = 18; ]
+            const y as Number = 39;
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 617; @position = 18; ]
+            const horizontalJustification as String = "center";
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 618; @position = 18; ]
+            const verticalJustification as String = "center";
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 621; ]
+        module prompt_font_enhanced_readability__title {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 621; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 622; @position = 18; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 625; ]
+        module prompt_color_dark__body {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 625; ]
+            <init> {
+[ "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen" 627 18 ]
+                %tmp.202 = getm $.Toybox.Graphics;
+                %tmp.203 = getv %tmp.202 :COLOR_TRANSPARENT;
+                putv self :background %tmp.203;
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 626; @position = 18; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 627; @position = 18; ]
+            const background;
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 630; ]
+        module confirmation_icon__hint_delete {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 630; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 631; @position = 18; ]
+            const filename as String = "/Users/dan-luciannita/Library/Application Support/Garmin/ConnectIQ/Devices/fenix7/confirmation_icon__hint_delete.svg";
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 632; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 635; ]
+        module system_icon_light__hint_button_right_top {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 635; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 636; @position = 18; ]
+            const filename as String = "/Users/dan-luciannita/Library/Application Support/Garmin/ConnectIQ/Devices/fenix7/system_icon_light__hint_button_right_top.svg";
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 637; @position = 18; ]
+            const dithering as String = "none";
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 640; ]
+        module confirmation_size__body {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 640; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 641; @position = 18; ]
+            const width as Number = 156;
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 642; @position = 18; ]
+            const height as Number = 156;
+        }
+        [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 645; ]
+        module system_icon_positive__check {
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 645; ]
+            <init> {
+            }
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 646; @position = 18; ]
+            const filename as String = "/Users/dan-luciannita/Library/Application Support/Garmin/ConnectIQ/Devices/fenix7/system_icon_positive__check.svg";
+            [ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 647; @position = 18; ]
+            const dithering as String = "none";
+        }
+    }
+}
+[ @file = "/Users/dan-luciannita/work/garminapp/Solutions/compass/bin/gen/006-B3906-00/source/Rez.mcgen"; @line = 1; ]
+<init> {
+}
